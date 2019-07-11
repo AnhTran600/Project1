@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>project1</display-name>
+  <welcome-file-list>
+  	<welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.revature.request.LoginServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>com.revature.request.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EmployeeHome</servlet-name>
+  	<servlet-class>com.revature.request.EmployeeHomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmployeeHome</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ManagerHome</servlet-name>
+  	<servlet-class>com.revature.request.ManagerHomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ManagerHome</servlet-name>
+  	<url-pattern>*.go</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

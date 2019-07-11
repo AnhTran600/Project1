@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Manager Home Page</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body style="background-color: white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="row">
+                <div class="container-fluid"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2"><br>
+                    <a href="https://revature.com/"><img src="images/RevatureCMYK.png" style="max-width: 237px;" alt="Revature"></a>
+                    <br><br><br><h3 style="color: rgb(71, 76, 85); font: sans-serif;">Welcome</h3>
+                    <h5 id="emname" style="color: rgb(71, 76, 85)">Manager!!!</h5>
+                    <div class="my-sm-2">
+                        <button type="button" class="btn btn-info">View All Pending</button>
+                    </div>
+                    <div class="my-sm-2">
+                        <button type="button" class="btn btn-info">View All Resolved</button>
+                    </div>
+                    <div class="my-sm-2">
+                        <button type="button" class="btn btn-info">View All Employees</button>
+                    </div>
+                    <form class="form" action="manager" method="GET" target="myframe">
+                        <div class="my-sm-2">
+                            <input class="form-control" type="search" placeholder="Enter Employee ID #" aria-label="Search">
+                        </div>
+                        <div class="my-sm-2">
+                                <button class="btn btn-info" type="submit">Search</button>
+                        </div>
+                    </form>
+                    <form class="form" action="logout" method="GET">
+                        <div class="my-sm-2">
+                            <button class="btn btn-info" type="submit" name="logout" value="true">Logout</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-10">
+                    <div class="container-fluid my-sm-4">
+                        <iframe width="1280px" height="695px" name="myframe" src="Welcome.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

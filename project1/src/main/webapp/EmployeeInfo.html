@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="C:/Users/Welcome/Repositories/project1/src/main/webapp/employee.json"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <script>
+            function getdata() {
+                var xhttp = new XMLHttpRequest();
+                // called wheneverready attribute changes
+                xhttp.open("GET","C:/Users/Welcome/Repositories/project1/src/main/webapp/employee.json",true);
+                xhttp.onreadystatechange=function() {
+                    //ready state represents state of request
+                    if (xhttp.readyState== 4 && xhttp.status==200) {
+                        var javaobj=JSON.parse(xhttp.response);
+                        document.getElementById('r1').innerHTML=javaobj.id;
+                        document.getElementById('r2').innerHTML=javaobj.firstname;
+                        document.getElementById('r3').innerHTML=javaobj.lastname;
+                        document.getElementById('r4').innerHTML=javaobj.username;
+                        document.getElementById('r5').innerHTML=javaobj.password;
+                        document.getElementById('r6').innerHTML=javaobj.gender;
+                        document.getElementById('r7').innerHTML=javaobj.mId;
+                    }
+                }
+                xhttp.open("GET","C:/Users/Welcome/Repositories/project1/src/main/webapp/employee.json",true);
+                xhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <table class="table table-light table-bordered table-hover">
+            <thead class="table-dark">
+                <tr align="center">
+                    <th scope="col">Employee ID</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Manager ID</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr align="center">
+                    <th scope="row" id="r1"></th>
+                    <td id="r2"></td>
+                    <td id="r3"></td>
+                    <td id="r4"></td>
+                    <td id="r5"></td>
+                    <td id="r6"></td>
+                    <td id="r7"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+        	<button class="btn btn-primary my-sm-1 mr-sm-2" type="submit" style="color: white;" onclick="getdata()">Show My Information</button>
+        </div>
+        
+
+    </body>
+</html>

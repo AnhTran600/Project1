@@ -1,0 +1,510 @@
+2019-06-28 22:42:28 INFO  ConnectionUtil:21 - Connected
+2019-06-29 21:17:13 TRACE EmployeeRepositoryJdbc:19 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:17:14 ERROR EmployeeRepositoryJdbc:39 - Could not find Employee Username.
+java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.EmployeeRepositoryJdbc.findEmployeeUsername(EmployeeRepositoryJdbc.java:25)
+	at com.revature.repository.EmployeeRepositoryJdbc.main(EmployeeRepositoryJdbc.java:65)
+2019-06-29 21:20:23 TRACE EmployeeRepositoryJdbc:19 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:24:17 TRACE EmployeeRepositoryJdbc:19 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:24:18 ERROR EmployeeRepositoryJdbc:39 - Could not find Employee Username.
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:1460)
+	at com.revature.repository.EmployeeRepositoryJdbc.findEmployeeUsername(EmployeeRepositoryJdbc.java:33)
+	at com.revature.repository.EmployeeRepositoryJdbc.main(EmployeeRepositoryJdbc.java:65)
+2019-06-29 21:28:25 TRACE EmployeeRepositoryJdbc:19 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:39:44 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:39:45 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-06-29 21:42:08 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:42:09 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-06-29 21:47:43 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:47:44 ERROR EmployeeRepositoryJdbc:40 - Could not find Employee Username.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.EmployeeRepositoryJdbc.findEmployeeUsername(EmployeeRepositoryJdbc.java:25)
+	at com.revature.repository.EmployeeRepositoryJdbc.main(EmployeeRepositoryJdbc.java:109)
+2019-06-29 21:47:44 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-06-29 21:47:53 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:47:54 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-06-29 21:49:22 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 21:49:22 TRACE EmployeeRepositoryJdbc:47 - Entering findAllEmployee method without parameter.
+2019-06-29 21:49:23 TRACE EmployeeRepositoryJdbc:81 - Entering viewEmployee method with parameter.
+2019-06-29 22:07:52 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 22:07:53 TRACE EmployeeRepositoryJdbc:47 - Entering findAllEmployee method without parameter.
+2019-06-29 22:07:54 TRACE EmployeeRepositoryJdbc:93 - Entering findEmployee method with parameter.
+2019-06-29 22:07:54 TRACE EmployeeRepositoryJdbc:75 - Entering updateEmployee method with parameter.
+2019-06-29 22:08:44 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 22:08:45 TRACE EmployeeRepositoryJdbc:47 - Entering findAllEmployee method without parameter.
+2019-06-29 22:08:45 TRACE EmployeeRepositoryJdbc:93 - Entering findEmployee method with parameter.
+2019-06-29 22:08:46 TRACE EmployeeRepositoryJdbc:75 - Entering updateEmployee method with parameter.
+2019-06-29 22:09:33 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-29 22:09:34 TRACE EmployeeRepositoryJdbc:47 - Entering findAllEmployee method without parameter.
+2019-06-29 22:09:34 TRACE EmployeeRepositoryJdbc:93 - Entering findEmployee method with parameter.
+2019-06-29 22:09:34 TRACE EmployeeRepositoryJdbc:75 - Entering updateEmployee method with parameter.
+2019-06-29 22:20:14 TRACE ManagerRepositoryJdbc:18 - Entering findManagerUsername method with parameter.
+2019-06-29 22:20:59 TRACE ManagerRepositoryJdbc:18 - Entering findManagerUsername method with parameter.
+2019-06-30 18:06:18 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:06:18 ERROR ReimbursementRepositoryJdbc:30 - Could not get max reimbursement ID.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:16)
+	at com.revature.repository.ReimbursementRepositoryJdbc.getMaxReimbursementId(ReimbursementRepositoryJdbc.java:21)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:101)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 14 more
+2019-06-30 18:06:18 TRACE ReimbursementRepositoryJdbc:37 - Entering updateEmployee method with parameter.
+2019-06-30 18:06:18 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:06:18 ERROR ReimbursementRepositoryJdbc:30 - Could not get max reimbursement ID.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:16)
+	at com.revature.repository.ReimbursementRepositoryJdbc.getMaxReimbursementId(ReimbursementRepositoryJdbc.java:21)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:38)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:105)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 10 more
+Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 15 more
+2019-06-30 18:06:18 ERROR ReimbursementRepositoryJdbc:53 - Could not submit reimbursement request.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:16)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:39)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:105)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 14 more
+2019-06-30 18:06:40 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:08:43 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:08:44 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:08:44 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:08:45 ERROR ReimbursementRepositoryJdbc:55 - Could not submit reimbursement request.
+java.sql.SQLException: Missing IN or OUT parameter at index:: 3
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:50)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:107)
+2019-06-30 18:09:50 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:09:51 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:09:51 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:09:51 ERROR ReimbursementRepositoryJdbc:55 - Could not submit reimbursement request.
+java.sql.SQLException: Missing IN or OUT parameter at index:: 3
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:50)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:107)
+2019-06-30 18:11:31 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:13:23 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:13:24 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:13:24 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:13:25 ERROR ReimbursementRepositoryJdbc:55 - Could not submit reimbursement request.
+java.sql.SQLException: Missing IN or OUT parameter at index:: 3
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:50)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:107)
+2019-06-30 18:14:09 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:14:10 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:14:10 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:14:11 ERROR ReimbursementRepositoryJdbc:56 - Could not submit reimbursement request.
+java.sql.SQLException: Missing IN or OUT parameter at index:: 7
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:51)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:108)
+2019-06-30 18:14:35 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:14:35 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:14:35 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:14:36 ERROR ReimbursementRepositoryJdbc:56 - Could not submit reimbursement request.
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (ADMIN.PK_REIMBURSEMENT) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:51)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:108)
+2019-06-30 18:19:26 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:20:06 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:21:33 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:21:34 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:21:34 ERROR ReimbursementRepositoryJdbc:54 - Could not submit reimbursement request.
+java.sql.SQLSyntaxErrorException: ORA-00947: not enough values
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:49)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:106)
+2019-06-30 18:22:04 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:22:05 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:22:05 ERROR ReimbursementRepositoryJdbc:55 - Could not submit reimbursement request.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.ReimbursementRepositoryJdbc.submitReimbursement(ReimbursementRepositoryJdbc.java:49)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:107)
+2019-06-30 18:40:09 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:40:10 TRACE ReimbursementRepositoryJdbc:39 - Entering updateEmployee method with parameter.
+2019-06-30 18:41:01 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:41:02 TRACE ReimbursementRepositoryJdbc:39 - Entering submitReimbursement method with parameter.
+2019-06-30 18:48:52 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:48:54 TRACE ReimbursementRepositoryJdbc:39 - Entering submitReimbursement method with parameter.
+2019-06-30 18:52:29 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 18:52:30 TRACE ReimbursementRepositoryJdbc:39 - Entering submitReimbursement method with parameter.
+2019-06-30 18:58:20 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method with no parameter.
+2019-06-30 19:01:53 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method without parameter.
+2019-06-30 19:02:18 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method without parameter.
+2019-06-30 19:02:45 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method without parameter.
+2019-06-30 19:02:46 TRACE ReimbursementRepositoryJdbc:39 - Entering submitReimbursement method with parameter.
+2019-06-30 19:06:43 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method without parameter.
+2019-06-30 19:06:45 TRACE ReimbursementRepositoryJdbc:39 - Entering submitReimbursement method with parameter.
+2019-06-30 19:06:46 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method without parameter.
+2019-06-30 19:07:20 TRACE ReimbursementRepositoryJdbc:39 - Entering submitReimbursement method with parameter.
+2019-06-30 19:07:21 TRACE ReimbursementRepositoryJdbc:20 - Entering getMaxReimbursementId method without parameter.
+2019-06-30 19:21:32 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:21:33 ERROR ReimbursementRepositoryJdbc:82 - Could not get max reimbursement ID.
+java.sql.SQLSyntaxErrorException: ORA-00904: "REIBURSEMENT_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.ReimbursementRepositoryJdbc.findEmployeePendingReimbursement(ReimbursementRepositoryJdbc.java:66)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:125)
+2019-06-30 19:24:06 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:24:43 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:24:56 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:25:26 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:25:27 ERROR ReimbursementRepositoryJdbc:82 - Could not get all pending reimbursement for employee.
+java.sql.SQLSyntaxErrorException: ORA-00907: missing right parenthesis
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.ReimbursementRepositoryJdbc.findEmployeePendingReimbursement(ReimbursementRepositoryJdbc.java:66)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:125)
+2019-06-30 19:26:39 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:26:40 ERROR ReimbursementRepositoryJdbc:83 - Could not get all pending reimbursement for employee.
+java.sql.SQLSyntaxErrorException: ORA-00907: missing right parenthesis
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.ReimbursementRepositoryJdbc.findEmployeePendingReimbursement(ReimbursementRepositoryJdbc.java:67)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:126)
+2019-06-30 19:31:29 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:32:18 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingREimburement method with parameter.
+2019-06-30 19:43:20 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingReimburement method with parameter.
+2019-06-30 19:43:21 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 19:43:47 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingReimburement method with parameter.
+2019-06-30 19:44:56 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingReimburement method with parameter.
+2019-06-30 19:45:56 ERROR ReimbursementRepositoryJdbc:84 - Could not get all pending reimbursement for employee.
+java.sql.SQLRecoverableException: IO Error: Socket read timed out
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:16)
+	at com.revature.repository.ReimbursementRepositoryJdbc.findEmployeePendingReimbursement(ReimbursementRepositoryJdbc.java:62)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:151)
+Caused by: oracle.net.ns.NetException: Socket read timed out
+	at oracle.net.ns.Packet.receive(Packet.java:350)
+	at oracle.net.ns.NSProtocolStream.negotiateConnection(NSProtocolStream.java:153)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:263)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+2019-06-30 19:46:28 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingReimburement method with parameter.
+2019-06-30 19:46:59 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 19:50:08 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 19:52:19 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 19:52:50 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 19:58:53 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingReimburement method with parameter.
+2019-06-30 20:00:56 TRACE ReimbursementRepositoryJdbc:61 - Entering findEmployeePendingReimburement method with parameter.
+2019-06-30 20:01:36 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 20:07:58 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 20:22:40 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-06-30 20:26:25 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-06-30 20:26:26 TRACE EmployeeRepositoryJdbc:47 - Entering findAllEmployee method without parameter.
+2019-06-30 20:26:26 TRACE EmployeeRepositoryJdbc:93 - Entering findEmployee method with parameter.
+2019-06-30 20:26:26 TRACE EmployeeRepositoryJdbc:75 - Entering updateEmployee method with parameter.
+2019-07-01 11:38:32 TRACE ReimbursementRepositoryJdbc:91 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-07-01 11:47:09 TRACE ReimbursementRepositoryJdbc:92 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-07-01 11:58:50 TRACE ReimbursementRepositoryJdbc:148 - Entering findEmployeeReimbursement method with parameter.
+2019-07-01 11:59:21 TRACE ReimbursementRepositoryJdbc:148 - Entering findEmployeeReimbursement method with parameter.
+2019-07-01 11:59:50 TRACE ReimbursementRepositoryJdbc:148 - Entering findEmployeeReimbursement method with parameter.
+2019-07-01 11:59:52 TRACE ReimbursementRepositoryJdbc:92 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-07-01 12:15:03 TRACE ReimbursementRepositoryJdbc:92 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-07-01 12:16:54 TRACE ReimbursementRepositoryJdbc:147 - Entering findEmployeeReimbursement method with parameter.
+2019-07-01 12:20:39 TRACE ReimbursementRepositoryJdbc:92 - Entering findEmployeeResolvedReimburement method with parameter.
+2019-07-01 14:09:43 TRACE ReimbursementRepositoryJdbc:141 - Entering findAllResolvedReimbursement method with no parameter.
+2019-07-01 14:12:10 TRACE ReimbursementRepositoryJdbc:135 - Entering findAllPendingReimbursement method with no parameter.
+2019-07-01 14:42:03 TRACE ReimbursementRepositoryJdbc:123 - Entering approveReimbursement method with parameter.
+2019-07-01 14:42:04 ERROR ReimbursementRepositoryJdbc:137 - Could not approved reimbursement request.
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("ADMIN"."REIMBURSEMENT"."REIMBURSEMENT_EMPLOYEE_ID")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.ReimbursementRepositoryJdbc.approveReimbursement(ReimbursementRepositoryJdbc.java:131)
+	at com.revature.repository.ReimbursementRepositoryJdbc.main(ReimbursementRepositoryJdbc.java:240)
+2019-07-01 14:52:12 TRACE ReimbursementRepositoryJdbc:123 - Entering approveReimbursement method with parameter.
+2019-07-01 14:54:05 TRACE ReimbursementRepositoryJdbc:123 - Entering approveReimbursement method with parameter.
+2019-07-01 14:59:20 TRACE ReimbursementRepositoryJdbc:144 - Entering denyReimbursement method with parameter.
+2019-07-01 14:59:45 TRACE ReimbursementRepositoryJdbc:123 - Entering approveReimbursement method with parameter.
+2019-07-01 15:05:00 TRACE ReimbursementRepositoryJdbc:166 - Entering findAllPendingReimbursement method with no parameter.
+2019-07-01 15:07:09 TRACE ReimbursementRepositoryJdbc:165 - Entering findAllPendingReimbursement method with no parameter.
+2019-07-01 15:07:10 TRACE ReimbursementRepositoryJdbc:194 - Entering findAllResolvedReimbursement method with no parameter.
+2019-07-01 20:51:41 TRACE ManagerRepositoryJdbc:18 - Entering findManagerUsername method with parameter.
+2019-07-01 20:51:43 ERROR ManagerRepositoryJdbc:37 - Could not find Manager Username.
+java.sql.SQLException: Missing IN or OUT parameter at index:: 2
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.ManagerRepositoryJdbc.findManagerLogin(ManagerRepositoryJdbc.java:24)
+	at com.revature.repository.ManagerRepositoryJdbc.main(ManagerRepositoryJdbc.java:45)
+2019-07-01 20:51:58 TRACE ManagerRepositoryJdbc:18 - Entering findManagerUsername method with parameter.
+2019-07-01 20:53:18 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-07-01 20:53:43 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-07-01 21:08:20 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameter.
+2019-07-01 22:10:10 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:10:11 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:10:11 TRACE EmployeeRepositoryJdbc:94 - Entering findEmployee method with parameter.
+2019-07-01 22:10:11 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:11:32 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:11:33 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:11:33 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-01 22:11:33 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:12:28 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:12:29 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:12:29 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:12:29 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-01 22:13:26 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:13:27 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:13:28 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:13:28 ERROR EmployeeRepositoryJdbc:88 - Could not update Employee Manager.
+java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (ADMIN.FK_EMPLOYEE) violated - parent key not found
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJdbc.updateEmployee(EmployeeRepositoryJdbc.java:82)
+	at com.revature.repository.EmployeeRepositoryJdbc.main(EmployeeRepositoryJdbc.java:128)
+2019-07-01 22:13:28 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-01 22:14:06 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:14:07 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:14:07 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:14:08 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-01 22:15:23 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:15:24 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:15:24 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:15:24 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-01 22:16:44 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:16:45 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:16:45 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:16:46 ERROR EmployeeRepositoryJdbc:88 - Could not update Employee Manager.
+java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (ADMIN.FK_EMPLOYEE) violated - parent key not found
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.EmployeeRepositoryJdbc.updateEmployee(EmployeeRepositoryJdbc.java:82)
+	at com.revature.repository.EmployeeRepositoryJdbc.main(EmployeeRepositoryJdbc.java:128)
+2019-07-01 22:16:46 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-01 22:18:16 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-01 22:18:17 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-01 22:18:17 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-01 22:18:17 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-02 15:12:06 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-02 15:12:07 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-02 15:12:07 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-02 15:12:08 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-02 15:53:15 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-02 15:53:16 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-02 15:53:17 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-02 15:53:17 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-02 16:59:43 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-02 16:59:44 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-02 16:59:45 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-02 16:59:47 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-02 17:02:41 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-02 17:02:42 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-02 17:02:42 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-02 17:02:42 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
+2019-07-03 19:48:02 TRACE EmployeeRepositoryJdbc:20 - Entering findEmployeeUsername method with parameters.
+2019-07-03 19:48:03 TRACE EmployeeRepositoryJdbc:48 - Entering findAllEmployee method without parameter.
+2019-07-03 19:48:03 TRACE EmployeeRepositoryJdbc:76 - Entering updateEmployee method with parameter.
+2019-07-03 19:48:04 TRACE EmployeeRepositoryJdbc:95 - Entering findEmployee method with parameter.
